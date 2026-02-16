@@ -62,7 +62,42 @@ This project allows users to browse blog posts, view detailed articles, navigate
 ## 📸 Screenshots
 
 ### Home Page
-<img width="500" height="500" alt="Screenshot (29)" src="https://github.com/user-attachments/assets/7c745788-7165-4f2e-900b-4292f3cd6038" />
+<img width="800" height="700" alt="Screenshot (54)" src="https://github.com/user-attachments/assets/419cc414-6f3f-4d54-aafb-9aa701b202ca" />
+
+### Pagination
+<img width="800" height="700" alt="Screenshot (55)" src="https://github.com/user-attachments/assets/0e2a05f4-2a32-460b-8d2b-2fcd0094cd8d" />
+
+### Detail Page
+<img width="800" height="700" alt="Screenshot (56)" src="https://github.com/user-attachments/assets/a0601a04-8a14-4dde-bc2b-ec077e43c3b6" />
+
+### Contact Page
+<img width="800" height="700" alt="Screenshot (57)" src="https://github.com/user-attachments/assets/56da4dcf-47bb-40c0-8514-e20bc15e1ab8" />
+
+---
+
+# 🎯 Learning Outcomes
+- Understanding Django MVT architecture
+- Template rendering
+- URL routing
+- Pagination implementation
+- Dynamic content rendering
+- Form handling in Django
+- Basic UI design
+
+---
+
+# 📌 Future Improvements
+
+- User authentication (Login/Register)
+- Comment system
+- Like & Share feature
+- Admin dashboard customization
+- Deploy to Heroku / PythonAnywhere
+
+
+
+
+
 
 
 
