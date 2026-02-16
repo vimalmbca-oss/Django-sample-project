@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    table,tr,th,td
+    {
+        border: 2px solid;
+        border-collapse: collapse;
+        text-align: center;
+        margin-left: 420px;
+        padding: 15px;
+        background-color: white;
+        
+    }
+    .a
+    {
+        padding:15px;
+            background-color:blue;
+            border:none;
+            color:white;
+            border-radius:25px;
+            margin-left: 630px;
+            
+    }
+    h1
+    {
+         text-align: center;
+            margin-top:100px;
+            color:white;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    body
+        {
+            background-color: blueviolet;
+        }
+    .b
+    {
+       background-color:blue;
+       color:white;
+       border-radius:25px; 
+    }    
+
+</style>
+
+</head>
+<body>
+    <h1>STUDENT LISTS</h1><br><br>
+    <table>
+        <tr>
+            <th>s.no</th>
+            <th>name</th>
+            <th>age</th>
+            <th>email</th>
+            <th>edit</th>
+            <th>delete</th>
+        </tr>
+        {% for std in students %}
+        <tr>
+            <td>{{std.id}}</td>
+            <td>{{std.name}}</td>
+            <td>{{std.age}}</td>
+            <td>{{std.email}}</td>
+            <td>
+                <a href="{% url 'update_std' std.id %}">
+                    <button  class="b">edite</button>
+                </a>
+            </td>
+            <td>
+                <a href="{% url 'delete_std' std.id %}">
+                    <button  class="b">delete</button>
+                </a>
+            </td>
+        </tr>
+        {% endfor %}
+    </table><br><br>
+    <a href="{% url 'add_info' %}">
+        <button class="a">ADD STUDENT</button>
+    </a>
+</body>
+</html>
